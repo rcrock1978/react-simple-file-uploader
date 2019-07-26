@@ -1,0 +1,150 @@
+@import 'variables';
+
+.file__upload .form__input {
+  .dropzone {
+    align-items: flex-start;
+    background-color: $light-grey;
+    border: 2px dashed $medium-grey;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    justify-content: flex-start;
+    min-height: 200px;
+    position: relative;
+    width: 100%;
+
+    span {
+      align-self: center;
+      color: $medium-grey;
+      justify-self: center;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--highlight {
+      background-color: rgb(188, 185, 236);
+    }
+
+    &__file__input {
+      display: none;
+    }
+
+    .multi-preview-file {
+      margin: 10px 5px;
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+
+      .btn--remove {
+        background-color: $light-grey;
+        border-radius: 50%;
+        border: 1px solid $medium-grey;
+        color: #555;
+        font-size: 14px;
+        font-weight: 600;
+        height: 20px;
+        left: -5px;
+        padding: 5px;
+        position: absolute;
+        top: -5px;
+        width: 20px;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::before {
+          background-color: $medium-grey;
+          content: "";
+          display: block;
+          height: 8px;
+          mask: url('../images/times-solid.svg') no-repeat center;
+          width: 8px;
+        }
+
+        &:hover {
+          background-color: $medium-grey;
+
+          &::before {
+            background-color: $light-grey;
+            mask: url('../images/times-solid.svg') no-repeat center;
+          }
+        }
+      }
+
+      img {
+        max-width: 100px;
+      }
+
+      .file-name {
+        max-width: 100px;
+        background-color: $medium-grey;
+        color: $light-grey;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .single {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+
+    .preview-file {
+      border-radius: 50%;
+      height: 110px;
+      margin-right: 30px;
+      position: relative;
+      width: 110px;
+
+      img {
+        border-radius: 50%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .file__controllers {
+      display: flex;
+      flex-wrap: wrap;
+
+      .btn {
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 1px 3px 1px rgba(60, 64, 67, 0.149);
+        color: #555;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding: 10px 15px 10px;
+
+        &::before {
+          background: url('../images/paperclip-solid.svg') no-repeat;
+          content: "";
+          display: inline-block;
+          height: 15px;
+          margin-right: 5px;
+          width: 15px;
+        }
+      }
+
+      span {
+        font-size: 0.8em;
+        color: $medium-grey;
+        width: 100%;
+      }
+    }
+  }
+}
