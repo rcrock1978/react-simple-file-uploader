@@ -26,7 +26,7 @@ class Single extends PureComponent {
         ? window.URL.createObjectURL(file)
         : ImagePlaceholder;
     }
-
+    console.log(file);
     onChange(file);
   }
 

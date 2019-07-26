@@ -30,6 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "nwb": "0.23.x",
+    "nwb-sass": "^0.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -37,7 +38,7 @@
   "author": "mauriciobaccin@gmail.com",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/mauriciobaccin/react-simple-file-uploader",
   "keywords": [
     "react-component"
   ]

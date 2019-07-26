@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import Dropzone from './components/Dropzone';
 import Single from './components/Single';
 
+import './assets/styles/main.scss';
+
 class FileUpload extends PureComponent {
   constructor(props) {
     super(props);
