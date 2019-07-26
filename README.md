@@ -14,3 +14,10 @@ Describe react-simple-file-uploader here.
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
 [coveralls]: https://coveralls.io/github/user/repo
+
+## Adding it to a project
+```
+yarn add react-simple-file-uploader
+``` 
+
+> I build this to use with redux-form but it also works without.
